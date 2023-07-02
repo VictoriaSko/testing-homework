@@ -33,7 +33,7 @@ cd playwright/
 npm ci
 
 # установите зависимости playwright
-npx install playwright
+npx playwright install
 
 # запустите тестирование в графическом режиме
 npx playwright test --ui 
