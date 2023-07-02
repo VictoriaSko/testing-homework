@@ -20,8 +20,11 @@ npm start
 Playwright: <br/>
 
 ```sh
-# запустите проект с переменной окружения BUG_ID от 1 до 10
-BUG_ID=1 npm start
+# В package.json для команды start задать необходимый BUG_ID от 0 до 10 (где 0 - это запуск без багов)
+# "start": "cross-env BUG_ID=0 nodemon ./src/server/index.ts"
+
+# запустите проект
+npm start
 
 # перейдите в папку playwright
 cd playwright/
